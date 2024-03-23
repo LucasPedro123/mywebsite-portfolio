@@ -1,3 +1,6 @@
 :root{
-    
+    --primary: #0c0c1d;
+
+    --white-main: #fff;
+    --lightgrray: lightgray;
 }
