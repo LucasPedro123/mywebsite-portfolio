@@ -1,11 +1,15 @@
 import Hero from "../../Component/Hero/Hero-component";
+import Navbar from "../../Component/NavBar/Navbar";
 
 
 function Home() {
 
     return (
         <>
-            <Hero />
+            <section>
+                <Navbar />
+                <Hero />
+            </section>
             <section>Parallax</section>
             <section>Services</section>
             <section>Parallax</section>

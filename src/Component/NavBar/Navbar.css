@@ -1,15 +1,16 @@
 .navbar{
-    height: 100px;
-    border: 2px solid black;
+    height: 15%;
+    z-index: 999;
     .wrapper{
         max-width: 1366px;
         display: flex;
         align-items: center;
-        justify-content: space-around;
         height: 100%;
         span{
             font-weight: bold;
             font-size: 1.5em;
+            position: absolute;
+            left: 120px;
         }
 
     }
@@ -18,7 +19,8 @@
 .social{
     display: flex;
     gap: 20px;
-
+    position: absolute;
+    right: 120px;
     i{
         font-size: 1.5em;
     }
