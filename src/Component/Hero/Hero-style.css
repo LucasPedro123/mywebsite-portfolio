@@ -1,0 +1,75 @@
+.main {
+    height:85%;
+    overflow: hidden;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+}
+.main-wrapper{
+    position: absolute;
+    left: 120px;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+
+    .main-name{
+        font-size: 30px;
+        letter-spacing: 10px;
+        color: rebeccapurple;
+    }
+    .main-buttoms{
+        display: flex;
+        gap: 20px;
+        button{
+            cursor: pointer;
+            font-weight: 300;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 10px;
+            color: var(--lightgrray);
+            background-color: transparent;
+        }
+    }
+    .main-title{
+        font-size: 88px;
+    }
+}
+
+
+.main-image{
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    overflow: hidden;
+    img {
+        width: 60%;
+        overflow: hidden;
+    }
+}
+
+.main-icons {
+    width: 40px;
+    height: 60px;
+    font-size: 1.2em;
+    border-radius: 15px;
+    border: 1px solid var(--lightgrray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-slidingText {
+    z-index: 0;
+    display: flex;
+    font-weight: bold;
+    align-items: end;
+    font-size: 50vh;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #f2c1b609;
+    max-width: 100%; 
+}
