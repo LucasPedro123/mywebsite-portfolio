@@ -57,31 +57,29 @@ const items = [
 ];
 
 const Projects = ({ item }) => {
-    const ref = useRef();
-    const { scrollYProgress } = useScroll({ target: ref, })
+    const imageRef = useRef();
+    const { scrollYProgress } = useScroll({ target: imageRef });
     const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
     return (
-        <section ref={ref}>
+        <section>
             <div className='portfolio-content'>
-                <div className='portfolio-image' ref={ref}>
-
+                <div className='portfolio-image' ref={imageRef}>
                     <img src={item.img} alt="" />
                 </div>
-                <motion.div style={{ y: y }} className='portfolio-description'>
+                <motion.div style={{ y }} className='portfolio-description'>
                     <h2>{item.name}</h2>
                     <p>{item.desc}</p>
                     <a href={item.link} target='_target'>
                         <button>
                             See demo
                         </button>
-
                     </a>
                 </motion.div>
             </div>
         </section>
-    )
-}
+    );
+};
 
 function Portfolio() {
     const ref = useRef();
