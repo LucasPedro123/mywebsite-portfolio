@@ -65,6 +65,7 @@
         display: flex;
         margin: 0px 10%;
         .box{
+            width: 300px;
             padding: 50px;
             border: 0.5px solid gray;
             display: flex;
