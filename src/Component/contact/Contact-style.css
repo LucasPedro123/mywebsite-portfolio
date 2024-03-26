@@ -1,0 +1,61 @@
+section > .footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        h1{
+            font-size: 100px;
+            line-height: 88px;
+        }
+
+        span{
+            font-weight: 600;
+        }
+    }
+    .tel-icon{
+        stroke: orange;
+        position: absolute;
+    }
+    .footer-form{
+        width: 500px;
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        input, textarea{
+            padding: 20px;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            border-radius: 5px;
+        }
+
+        button{
+            padding: 20px;
+            border: none;
+            background-color: orange;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.6s;
+        }
+
+        button:hover{
+            background-color: rgb(195, 130, 9);
+            transform: scale(1.05);
+        }
+    }
+}
