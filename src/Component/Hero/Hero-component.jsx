@@ -1,5 +1,5 @@
 import Navbar from "../NavBar/Navbar"
-import myImg from '../../assets/Imgs/hero.png'
+import myImg from '../../assets/Imgs/p2p.png'
 import { motion } from "framer-motion";
 import './Hero-style.css'
 
@@ -31,7 +31,7 @@ const sliderVariants = {
     x: 0, // Inicializa o texto fora da tela à direita
   },
   animate: {
-    x: ["100%", "-100%", "100%"], // Move o texto da direita para a esquerda e de volta para a direita
+    x: ["-100%", "100%", "-100%", "100%"], // Move o texto da direita para a esquerda e de volta para a direita
     transition: {
       repeatType: "mirror",
       repeat: Infinity,

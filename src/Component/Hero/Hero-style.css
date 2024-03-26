@@ -18,6 +18,7 @@
 
     .main-name{
         font-size: 30px;
+        z-index: 2;
         letter-spacing: 10px;
         color: rebeccapurple;
     }
@@ -30,12 +31,15 @@
             padding: 20px;
             border: 1px solid white;
             border-radius: 10px;
+            z-index: 2;
             color: var(--lightgrray);
             background-color: transparent;
         }
     }
     .main-title{
         font-size: 88px;
+        z-index: 2;
+        
     }
 }
 
@@ -43,10 +47,10 @@
 .main-image{
     position: absolute;
     bottom: 0;
-    right: 0px;
+    right: 80px;
     overflow: hidden;
     img {
-        width: 60%;
+        width: 200px;
         overflow: hidden;
     }
 }
