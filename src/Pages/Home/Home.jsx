@@ -1,6 +1,7 @@
 import Hero from "../../Component/Hero/Hero-component";
 import Navbar from "../../Component/NavBar/Navbar";
 import Parallax from "../../Component/Parallax/Parallax-component";
+import Service from "../../Component/Services/Services-component";
 
 
 function Home() {
@@ -14,7 +15,9 @@ function Home() {
             <section>
                 <Parallax type="What We Do"/>
             </section>
-            <section>Services</section>
+            <section>
+                <Service/>
+            </section>
             <section>
                 <Parallax type="What Web Did"/>
             </section>
