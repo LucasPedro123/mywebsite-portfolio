@@ -12,7 +12,7 @@
         left: 0;
         bottom: 0;
         width: 400px;
-        z-index: 2;
+        z-index: 3;
         background: var(--white-main);
         height: 100%;
     }
