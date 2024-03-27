@@ -39,8 +39,8 @@ const items = [
         name: "Serviços"
     },
     {
-        link: "#sobre",
-        name: "Sobre"
+        link: "#porfolio",
+        name: "Porfolio"
     },
     {
         link: "#contato",

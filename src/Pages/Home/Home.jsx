@@ -10,21 +10,21 @@ function Home() {
 
     return (
         <>
-            <section>
+            <section id="home">
                 <Navbar />
                 <Hero />
             </section>
             <section>
                 <Parallax type="What We Do"/>
             </section>
-            <section>
+            <section id="servicos">
                 <Service/>
             </section>
-            <section>
+            <section >
                 <Parallax type="What Web Did"/>
             </section>
             <Portfolio/>
-            <section>
+            <section id="contato">
                 <Contact/>
             </section>
         </>
