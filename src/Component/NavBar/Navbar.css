@@ -26,6 +26,7 @@
         transition: 0.3s ease;
     }
     i:hover{
+        color: grey;
         transform: translateY(-8px) scale(1.2);
     }
 }

@@ -66,7 +66,7 @@
         margin: 0px 10%;
         .box{
             width: 300px;
-            padding: 50px;
+            padding: 30px;
             border: 0.5px solid gray;
             display: flex;
             flex-direction: column;
