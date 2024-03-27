@@ -47,3 +47,28 @@
         overflow: hidden;
     }
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .section-parallax{
+        h1{
+            font-size: 60px;
+            text-align: center;
+        }
+
+        .mountains{
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .stars{
+            background-size: 200vw;
+        }
+
+        .planets{
+            background-size: 150vw;
+            background-repeat: no-repeat;
+        }
+    }
+}

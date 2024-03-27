@@ -30,3 +30,20 @@
         transform: translateY(-8px) scale(1.2);
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        span{
+            display: none;
+        }
+        .social{
+            right: 20px;
+            justify-content: flex-end;
+        }
+    }
+
+    .bg{
+        width: 200px;
+    }
+}

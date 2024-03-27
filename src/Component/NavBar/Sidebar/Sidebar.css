@@ -31,3 +31,14 @@
         cursor: pointer;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+   
+    .sidebar{
+
+        .bg{
+            width: 200px;
+        }
+    }
+}
