@@ -1,31 +1,35 @@
 .main {
-    height:85%;
+    height: 85%;
     overflow: hidden;
     display: flex;
     z-index: 1;
     justify-content: space-between;
     background: linear-gradient(180deg, #0c0c1d, #111132);
 }
-.main-wrapper{
+
+.main-wrapper {
     position: absolute;
     left: 120px;
 }
-.main-content{
+
+.main-content {
     display: flex;
     flex-direction: column;
     gap: 40px;
     width: 50%;
 
-    .main-name{
+    .main-name {
         font-size: 30px;
         z-index: 2;
         letter-spacing: 10px;
         color: rebeccapurple;
     }
-    .main-buttoms{
+
+    .main-buttoms {
         display: flex;
         gap: 20px;
-        button{
+
+        button {
             cursor: pointer;
             font-weight: 300;
             padding: 20px;
@@ -36,19 +40,21 @@
             background-color: transparent;
         }
     }
-    .main-title{
+
+    .main-title {
         font-size: 88px;
         z-index: 2;
-        
+
     }
 }
 
 
-.main-image{
+.main-image {
     position: absolute;
     bottom: 0;
     right: 80px;
     overflow: hidden;
+
     img {
         width: 200px;
         overflow: hidden;
@@ -66,6 +72,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .main-slidingText {
     z-index: 0;
     display: flex;
@@ -75,5 +82,24 @@
     overflow: hidden;
     white-space: nowrap;
     color: #f2c1b609;
-    max-width: 100%; 
+    max-width: 100%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .main-wrapper{
+        left: 0px;
+    }
+    
+    .main-content{
+        width: 100%;
+        align-items: center;
+        .main-title {
+            font-size: 36px;
+            text-align: center;
+            z-index: 0;
+        }
+    }
+    
 }

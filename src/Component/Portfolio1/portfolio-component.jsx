@@ -24,7 +24,7 @@ const items = [
     {
         id: 2,
         link: "https://ibarber-shop.netlify.app/",
-        name: "barber-shop",
+        name: "Barber Shop",
         img: barberShop,
         desc: "A Barber Shop é um site projetado para promover serviços de barbearia, oferecendo informações sobre os cortes disponíveis, horário de funcionamento e localização. Desenvolvido com HTML5 e estilizado com CSS3, o site da Barber Shop apresenta um design responsivo e uma experiência de usuário atraente, complementada pela biblioteca AOS para animações suaves."
     },

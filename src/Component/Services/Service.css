@@ -1,11 +1,11 @@
-.services{
+.services {
     background: linear-gradient(180deg, #0c0c1d, #111132);
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    .textContainer{
+    .textContainer {
         flex: 1;
         align-self: flex-end;
         display: flex;
@@ -16,30 +16,31 @@
         font-size: 20px;
         font-weight: 300;
         color: grey;
-        hr{
+
+        hr {
             width: 500px;
             border: none;
             border-top: 0.5px solid gray;
         }
     }
-    
-    .titleContainer{
+
+    .titleContainer {
         flex: 2;
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        .title{
+        .title {
             display: flex;
             align-items: center;
             gap: 50px;
 
-            h1{
+            h1 {
                 font-size: 96px;
                 font-weight: 200;
             }
 
-            button{
+            button {
                 width: 300px;
                 height: 100px;
                 border-radius: 50px;
@@ -50,21 +51,25 @@
             }
         }
     }
-    .titleContainer img{
-            height: 100px;
-            width: 300px;
-            border-radius: 50px;
-            object-fit: cover;
-            transition: 0.9s;
+
+    .titleContainer img {
+        height: 100px;
+        width: 300px;
+        border-radius: 50px;
+        object-fit: cover;
+        transition: 0.9s;
     }
-    .titleContainer img:hover{
+
+    .titleContainer img:hover {
         transform: scale(1.2);
     }
-    .listContainer{
-        flex:2;
+
+    .listContainer {
+        flex: 2;
         display: flex;
         margin: 0px 10%;
-        .box{
+
+        .box {
             width: 300px;
             padding: 30px;
             border: 0.5px solid gray;
@@ -72,9 +77,10 @@
             flex-direction: column;
             justify-content: space-between;
             transition: 0.3s;
+            gap: 20px;
         }
 
-        button{
+        button {
             border: none;
             cursor: pointer;
             padding: 10px;
@@ -82,22 +88,96 @@
         }
 
 
-        .box:hover{
+        .box:hover {
             color: black;
             background: var(--lightgrray);
         }
     }
-    b{
+
+    b {
         transition: 0.3s;
     }
-    b:hover{
+
+    b:hover {
         color: orange;
     }
-    button{
+
+    button {
         transition: 0.3s;
     }
-    .title button:hover, button:hover{
+
+    .title button:hover,
+    button:hover {
         background-color: rgb(212, 138, 1);
         transform: scale(1.05);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #servicos{
+        height: 100%;
+    }
+    
+    .services {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+
+        .textContainer {
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-self: center;
+
+            br {
+                display: none;
+            }
+
+            hr {
+                width: 300px;
+            }
+        }
+
+
+        .titleContainer {
+            width: 100%;
+            align-self: center;
+            display: flex;
+            align-items: center;
+
+            .title {
+                align-self: center;
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+
+
+                h1 {
+                    font-size: 36px;
+
+                }
+
+                button{
+                    font-size: 18px;
+                    height: 60px;
+                    width: 180px;
+                }
+            }
+        }
+
+       
+        .listContainer{
+            height: 100%;
+            flex-direction: column;
+            align-items:center;
+            .box{
+                margin: 15px 0;
+            }
+           
+        }
+    
+           
+            
     }
 }
