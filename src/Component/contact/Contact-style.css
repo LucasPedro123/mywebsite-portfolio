@@ -27,6 +27,7 @@ section > .footer{
     .tel-icon{
         stroke: orange;
         position: absolute;
+        z-index: 1;
     }
     .footer-form{
         width: 500px;
@@ -37,6 +38,7 @@ section > .footer{
         }
 
         input, textarea{
+            z-index: 99;
             padding: 20px;
             background-color: transparent;
             border: 1px solid white;
@@ -45,6 +47,7 @@ section > .footer{
         }
 
         button{
+            z-index: 99;
             padding: 20px;
             border: none;
             background-color: orange;
@@ -56,6 +59,13 @@ section > .footer{
         button:hover{
             background-color: rgb(195, 130, 9);
             transform: scale(1.05);
+        }
+
+        .success{
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            background: linear-gradient(180deg, #068e0b, #033612);
         }
     }
 }

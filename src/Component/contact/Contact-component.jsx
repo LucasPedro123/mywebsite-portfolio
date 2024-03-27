@@ -1,13 +1,31 @@
 import './Contact-style.css';
-import {useRef} from 'react'
+import {useRef, useState} from 'react'
 import { motion, useInView,  } from "framer-motion";
-
+import emailjs from '@emailjs/browser';
 
 function Contact() {
 
-    const ref = useRef();
+    const formRef = useRef();
+    const [error, setError] = useState(null);
+    const [success, setSuccess] = useState(false);
 
-    const isInView = useInView(ref, {margin: "-100px"})
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_mvm0i4e', 'template_6yfcnup', formRef.current, 'Y_t8Xe4z0hOvSRyQq')
+            .then(
+                (response) => {
+                    console.log('Success:', response);
+                    setSuccess(true);
+                    setError(null);
+                },
+                (error) => {
+                    console.error('Error:', error);
+                    setSuccess(false);
+                    setError('Erro ao enviar o Email');
+                }
+            );
+    };
 
     const variants = {
         initial: {
@@ -27,7 +45,7 @@ function Contact() {
     return (
         <motion.div className='footer' variants={variants} initial="initial" whileInView="animate">
             <motion.div className='footer-content' variants={variants}>
-                <motion.h1 className='footer-title' variants={variants}>Let´s work<br /> together</motion.h1>
+                <motion.h1 className='footer-title' variants={variants}>Trabalhemos<br />unidos</motion.h1>
                 <motion.div className='footer-contact' variants={variants}>
                     <h2>E-mail</h2>
                     <span>lucaspedrofernandes@gmail.com</span>
@@ -55,12 +73,14 @@ function Contact() {
                         </motion.path>
                     </svg>
                 </motion.div>
-                <motion.form action="" className='form' initial={{opacity: 0}} whileInView={{opacity:1}} transition={{ delay: 5, duration: 2}}>
-                    <input type="text" required placeholder='Nome' />
-                    <input type="email" required placeholder='email' />
+                <motion.form ref={formRef} onSubmit={sendEmail} className='form' initial={{opacity: 0}} whileInView={{opacity:1}} transition={{ delay: 5, duration: 2}}>
+                    <input type="text" required placeholder='Nome' name='name'/>
+                    <input type="email" required placeholder='email' name='email' />
 
-                    <textarea name="" id="" cols="30" rows="10" placeholder='Menssagem'></textarea>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder='Menssagem'></textarea>
                     <button type='submit'>Enviar</button>
+                    {success && <motion.p initial={{opacity: 1}} whileInView={{opacity:0}} transition={{ delay: 3, duration: 2}} className='success'>Email enviado com sucesso</motion.p>}
+                    {error && <p className='error'>{error}</p>}
                 </motion.form>
             </div>
         </motion.div>
