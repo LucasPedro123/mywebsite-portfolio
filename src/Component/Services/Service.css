@@ -61,7 +61,7 @@
     }
 
     .titleContainer img:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 
     .listContainer {
@@ -122,7 +122,6 @@
         width: 100%;
         height: auto;
         margin-top: 20px;
-
         .textContainer {
             font-size: 18px;
             display: flex;
@@ -135,12 +134,14 @@
             }
 
             hr {
-                width: 300px;
+                width: 100%;
+                max-width: 300px;
             }
         }
 
 
         .titleContainer {
+            margin-top: 20px;
             width: 100%;
             align-self: center;
             display: flex;
@@ -163,6 +164,11 @@
                     height: 60px;
                     width: 180px;
                 }
+
+                img{
+                    width: 100%;
+                    max-width: 350px;
+                }
             }
         }
 
@@ -171,7 +177,11 @@
             height: 100%;
             flex-direction: column;
             align-items:center;
+            margin-top: 20px;
             .box{
+                width: 100%;
+                font-size: 16px;
+                max-width: 350px;
                 margin: 15px 0;
             }
            

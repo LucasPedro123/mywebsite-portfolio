@@ -95,11 +95,34 @@
     .main-content{
         width: 100%;
         align-items: center;
+        text-align: center;
         .main-title {
             font-size: 36px;
             text-align: center;
             z-index: 0;
         }
+        
+        .main-name{
+            font-size: 18px;
+            letter-spacing: 5px;
+        }
+        .main-buttoms{
+            button{
+                padding: 10px;
+            }
+        }
+
+
     }
-    
+
+    .main-image{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        right: 0;
+
+        img{
+            width: 100px;
+        }
+    }
 }

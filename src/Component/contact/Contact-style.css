@@ -1,3 +1,7 @@
+#contato{
+    height: 100vh;
+}
+
 .footer{
     height: 100%;
     width: 100%;
@@ -20,9 +24,15 @@
         }
     }
     .tel-icon{
+        width: 100%;
         stroke: orange;
         position: absolute;
         z-index: 1;
+        display: flex;
+        justify-content: center;
+        svg{
+            width: 300px;
+        }
     }
     .footer-form{
         width: 500px;
@@ -70,13 +80,14 @@
         flex-direction: column;
         padding: 10px;
         width: 100%;
+        justify-content: space-around;
         gap: 10px;
-        
-        
         .footer-content{
-            margin-top: -800px;
+            width: 100%;
+            margin-top: -900px;
             gap: 20px;
             text-align: center;
+            justify-content: center;
             align-items: center;
             .footer-title{
                 text-align: center;
@@ -87,7 +98,10 @@
         }
 
         .footer-form{
-            width: 300px;
+            width: 100%;
+            max-width: 300px;
+
+
 
             .tel-icon{
                 left: 0;
