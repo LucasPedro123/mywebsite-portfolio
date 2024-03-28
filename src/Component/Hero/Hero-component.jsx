@@ -22,8 +22,9 @@ const textVariants = {
       repeat: Infinity
     }
   },
-  
+
 };
+
 
 
 const sliderVariants = {
@@ -40,6 +41,7 @@ const sliderVariants = {
   },
 };
 
+
 function Hero() {
   return (
     <>
@@ -49,8 +51,12 @@ function Hero() {
             <motion.h2 className="main-name" variants={textVariants}>Lucas Pedro</motion.h2>
             <motion.h1 className="main-title" variants={textVariants}>Web developer and UI Designer</motion.h1>
             <motion.div className="main-buttoms" variants={textVariants}>
-              <motion.button variants={textVariants}>See the Latest Works</motion.button>
-              <motion.button variants={textVariants}>Contact Me</motion.button>
+              <a href="#servicos">
+                <motion.button variants={textVariants}>Veja Meus Trabalhos</motion.button>
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=11976589382&text=Olá,%20Lucas%20Pedro!%20Eu%20vim%20através%20do%20seu%20site!%20Podemos%20conversar?">
+                <motion.button variants={textVariants}>Entre em Contato <i class="fa-brands fa-whatsapp"></i></motion.button>
+              </a>
             </motion.div>
             <motion.div variants={textVariants} animate="scrollButton" className="main-icons">
               <i class="fa-solid fa-computer-mouse-scrollwheel"></i>
@@ -58,11 +64,11 @@ function Hero() {
             </motion.div>
           </motion.div>
         </div>
-        <motion.div className="main-slidingText" variants={sliderVariants} animate="animate">
-            Writer Content Creator Influencer
-        </motion.div>
+        <motion.div className="main-slidingText" variants={sliderVariants} initial="initial" animate="animate">
+          Transformando Ideias em Realidade Digital
+          </motion.div>
         <div className="main-image">
-          <img src={myImg}  alt="" />
+          <img src={myImg} alt="" />
         </div>
       </main>
     </>
