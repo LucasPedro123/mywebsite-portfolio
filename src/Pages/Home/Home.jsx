@@ -15,13 +15,13 @@ function Home() {
                 <Hero />
             </section>
             <section>
-                <Parallax type="What We Do"/>
+                <Parallax type="Saiba Mais Sobre Mim"/>
             </section>
             <section id="servicos">
                 <Service/>
             </section>
             <section >
-                <Parallax type="What Web Did"/>
+                <Parallax type="Veja Meus Projetos"/>
             </section>
             <Portfolio/>
             <section id="contato">

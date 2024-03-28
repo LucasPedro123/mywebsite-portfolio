@@ -28,17 +28,45 @@
     .main-buttoms {
         display: flex;
         gap: 20px;
-
-        button {
+        
+          button {
+            position: relative;
             cursor: pointer;
             font-weight: 300;
             padding: 20px;
-            border: 1px solid white;
+            border: 1px solid var(--lightgrray);
             border-radius: 10px;
             z-index: 2;
             color: var(--lightgrray);
+            font-weight: 500;
             background-color: transparent;
-        }
+            overflow: hidden;
+            transition: border-color 0.3s ease;
+          }
+          
+          button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: var(--lightgrray);
+            transition: width 0.3s ease;
+            z-index: -1; /* Definindo um z-index menor para que o pseudo-elemento fique abaixo do texto */
+          }
+          
+          button:hover::before {
+            width: 100%;
+          }
+          
+          button:hover {
+            border-color: white;
+            color: rgb(60, 60, 60); 
+          }
+          
+
+        
     }
 
     .main-title {
@@ -72,17 +100,15 @@
     align-items: center;
     justify-content: center;
 }
-
 .main-slidingText {
     z-index: 0;
     display: flex;
     font-weight: bold;
     align-items: end;
-    font-size: 50vh;
-    overflow: hidden;
+    font-size: 10vw;
     white-space: nowrap;
     color: #f2c1b609;
-    max-width: 100%;
+    width: 100%;
 }
 
 
@@ -114,7 +140,7 @@
 
 
     }
-
+ 
     .main-image{
         display: flex;
         justify-content: center;

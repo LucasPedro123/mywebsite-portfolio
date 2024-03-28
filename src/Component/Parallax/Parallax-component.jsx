@@ -11,7 +11,7 @@ function Parallax({ type }) {
     const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
 
     const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-    const yTexts = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
+    const yTexts = useTransform(scrollYProgress, [0, 1], ["0%", "400%"]);
     
     return (
         <div

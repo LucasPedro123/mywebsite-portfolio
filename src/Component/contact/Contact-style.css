@@ -24,9 +24,10 @@
         }
     }
     .tel-icon{
-        width: 100%;
         stroke: orange;
         position: absolute;
+        width: 100%;
+        max-width: 500px;
         z-index: 1;
         display: flex;
         justify-content: center;
@@ -104,6 +105,7 @@
 
 
             .tel-icon{
+                width: 100%;
                 left: 0;
             }
         }
