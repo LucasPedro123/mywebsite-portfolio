@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+#comentario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    background: #0C0C1D
+}
+.textContainer {
+    flex: 1;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: end;
+    font-size: 20px;
+    font-weight: 300;
+    color: grey;
+    hr {
+        width: 500px;
+        border: none;
+        border-top: 0.5px solid gray;
+    }
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+
+    i {
+        height: 50px;
+        width: 50px;
+        background: #fff;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        font-size: 1.3em;
+        transform: translateY(-50%);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    i:first-child {
+        left: -22px;
+    }
+
+    i:last-child {
+        right: -22px;
+    }
+
+    ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    ul {
+        height: 400px;
+        width: 900px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% / 3) - 12px);
+        gap: 16px;
+        overflow: hidden;
+        overflow-x: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: 0;
+
+        .card {
+            scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        li:hover {
+            cursor: grab;
+        }
+
+        li {
+            height: 100%;
+            width: 100%;
+            list-style: none;
+            background: #fff;
+            border-radius: 8px;
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            padding-bottom: 15px;
+        }
+
+        .img {
+            background: rebeccapurple;
+            width: 148px;
+            height: 148px;
+            border-radius: 50%;
+            position: relative;
+            top: 20px;
+            img {
+                width: 140px;
+                height: 140px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 4px solid #fff;
+            }
+        }
+
+        .card-img>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-texts {
+            height: 100%;
+            h2 {
+                color: gray;
+                font-weight: 600;
+                font-size: 1.56rem;
+                margin: 30px 0px 5px;
+            }
+
+            span {
+                color: #6a6d78;
+                font-size: 1.31rem;
+            }
+        }
+    }
+
+}
+.container-comments{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    
+
+    .message{
+        width: 100%;
+        display: flex;
+        margin: 15px 0 10px;
+    }
+    .login-message {
+        padding: 10px;
+        background-color: #fc2a2a; /* Cor vermelha vibrante */
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        i{
+            color: orange;
+            font-size: 1em;
+        }
+    }
+}
+.comment-content {
+    display: flex;
+    flex-direction: column;
+    .comment-forms {
+        display: flex;
+        align-items: center;
+    }
+
+    .profile-pic {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .input-box {
+        position: relative;
+        width: 100%;
+        border-bottom: 2px solid #ccc;
+    }
+
+    .comment-text {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #ccc;
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .submit-button {
+        height: 36px;
+        font-size: 14px;
+        background-color: orange;
+        color: black;
+        border: none;
+        border-radius: 18px;
+        padding: 0px 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .submit-button:hover {
+        background-color: rgb(188, 122, 0);
+    }
+
+    .comment-submit{
+        display: flex;
+        justify-content: end;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .textContainer {
+        margin-top: 20px;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-self: center;
+
+        br {
+            display: none;
+        }
+
+        hr {
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+    .container {
+        ul {
+            width: 100%;
+            max-width: 550px;
+            grid-auto-columns: calc((100% / 2) - 9px);
+        }
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        ul {
+            width: 100%;
+            max-width: 350px;
+            grid-auto-columns: 100%;
+        }
+    }
+    .container-comments{
+        width: 350px;
+        .submit-button {
+            height: 26px;
+            font-size: 12px;
+            padding: 0px 16px;
+        }
+        .comment-text{
+            font-size: 0.6em;
+        }
+    }
+}
+
+@media screen and (max-width: 393px) {
+    .textContainer{
+        hr{
+            max-width: 235px;
+        }
+    }
+    .container {
+        ul {
+            width: 100%;
+            max-width: 250px;
+
+            .img {
+                width: 128px;
+                height: 128px;
+
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+
+            .card-texts {
+                h2 {
+                    font-size: 1.49rem;
+                }
+
+                span {
+                    font-size: 1.01rem;
+                }
+            }
+        }
+    }
+    .container-comments{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 292px) {
+    .container {
+        i {
+            font-size: 1em;
+            line-height: 36px;
+            width: 36px;
+            height: 36px;
+        }
+
+        ul {
+            width: 100%;
+            max-width: 200px;
+        }
+    }
+}

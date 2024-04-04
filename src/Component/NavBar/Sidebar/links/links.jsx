@@ -43,6 +43,10 @@ const items = [
         name: "Porfolio"
     },
     {
+        link: "#comentarios",
+        name: "Comentários"
+    },
+    {
         link: "#contato",
         name: "Contato"
     },

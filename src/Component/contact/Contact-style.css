@@ -1,8 +1,8 @@
-#contato{
+#contato {
     height: 100vh;
 }
 
-.footer{
+.footer {
     height: 100%;
     width: 100%;
     display: flex;
@@ -10,20 +10,22 @@
     justify-content: space-around;
     gap: 100px;
 
-    .footer-content{
+    .footer-content {
         display: flex;
         flex-direction: column;
         gap: 40px;
-        h1{
+
+        h1 {
             font-size: 100px;
             line-height: 88px;
         }
 
-        span{
+        span {
             font-weight: 600;
         }
     }
-    .tel-icon{
+
+    .tel-icon {
         stroke: orange;
         position: absolute;
         width: 100%;
@@ -31,19 +33,23 @@
         z-index: 1;
         display: flex;
         justify-content: center;
-        svg{
+
+        svg {
             width: 300px;
         }
     }
-    .footer-form{
+
+    .footer-form {
         width: 500px;
-        form{
+
+        form {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
 
-        input, textarea{
+        input,
+        textarea {
             z-index: 99;
             padding: 20px;
             background-color: transparent;
@@ -52,7 +58,7 @@
             border-radius: 5px;
         }
 
-        button{
+        button {
             z-index: 99;
             padding: 20px;
             border: none;
@@ -62,12 +68,12 @@
             transition: 0.6s;
         }
 
-        button:hover{
+        button:hover {
             background-color: rgb(195, 130, 9);
             transform: scale(1.05);
         }
 
-        .success{
+        .success {
             border-radius: 5px;
             padding: 10px;
             text-align: center;
@@ -77,34 +83,42 @@
 }
 
 @media screen and (max-width: 768px) {
-    .footer{
+    .footer {
         flex-direction: column;
         padding: 10px;
         width: 100%;
+        align-items: center;
         justify-content: space-around;
-        gap: 10px;
-        .footer-content{
+        gap: 0px;
+
+        .footer-content {
             width: 100%;
-            margin-top: -900px;
+            margin-top: -85vh;
+            
             gap: 20px;
             text-align: center;
             justify-content: center;
             align-items: center;
-            .footer-title{
-                text-align: center;
-                line-height: 36px;
-                font-size: 36px;
+
+            h1 {
+                line-height: 26px;
+                font-size: 22px;
                 padding-top: calc(100vh - 100px);
             }
+           
         }
 
-        .footer-form{
+        .footer-form {
             width: 100%;
             max-width: 300px;
 
-
-
-            .tel-icon{
+            .form{
+                max-height: 350px;
+            }
+            button{
+                padding: 10px;
+            }
+            .tel-icon {
                 width: 100%;
                 left: 0;
             }

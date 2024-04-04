@@ -17,7 +17,7 @@ function Parallax({ type }) {
         <div
             className='section-parallax'
             style={{
-                background: type === "What We Do"
+                background: type === "Veja Meus Projetos"
                     ? "linear-gradient(180deg, #111132, #505064)"
                     : "linear-gradient(180deg, #111132, #0c0c14)"
             }}
