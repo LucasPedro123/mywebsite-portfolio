@@ -42,7 +42,9 @@ function Service() {
                     <h1>
                         <b>Para o Seu</b> Sucesso
                     </h1>
-                    <button>Descubra Como</button>
+                    <a href="#comentarios">
+                        <button>Descubra Como</button>
+                    </a>
                 </div>
             </motion.div>
             <motion.div className='listContainer' variants={variables}>

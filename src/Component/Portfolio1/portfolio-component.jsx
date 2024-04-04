@@ -79,7 +79,7 @@ const Projects = ({ item }) => {
                 <motion.div style={{ y }} className='portfolio-description'>
                     <h2>{item.name}</h2>
                     <p>{item.desc}</p>
-                    <a href={item.link} target='_target'>
+                    <a href={item.link} target='_target' className='btn-link'>
                         <button>
                             Demo
                         </button>
