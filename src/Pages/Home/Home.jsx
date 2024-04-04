@@ -1,3 +1,4 @@
+import Comments from "../../Component/Comments/Comments-component";
 import Hero from "../../Component/Hero/Hero-component";
 import Navbar from "../../Component/NavBar/Navbar";
 import Parallax from "../../Component/Parallax/Parallax-component";
@@ -23,7 +24,13 @@ function Home() {
             <section >
                 <Parallax type="Veja Meus Projetos"/>
             </section>
-            <Portfolio/>
+            <Portfolio />
+            <section >
+                <Parallax type="Depoimentos"/>
+            </section>
+            <section id="comentarios">
+                <Comments/>
+            </section>
             <section id="contato">
                 <Contact/>
             </section>
