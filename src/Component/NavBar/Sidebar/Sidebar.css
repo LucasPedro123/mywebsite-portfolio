@@ -15,10 +15,30 @@
         z-index: 3;
         background: var(--white-main);
         height: 100%;
+
+
+        .google-login-button {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            z-index: 9999; /* Valor alto para garantir que o botão esteja na parte superior */
+        }
+
+        .user-info{
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            z-index: 9999; /* Valor alto para garantir que o botão esteja na parte superior */
+            img{
+                border-radius: 50%;
+                width: 100%;
+                max-width: 60px;
+            }
+        }
     }
   
     button{
-        z-index: 3;
+        z-index: 999;
         width: 50px;
         height: 50px;
         border: 50%;
@@ -38,7 +58,16 @@
     .sidebar{
 
         .bg{
-            width: 200px;
+            z-index: 100;
+            width: 220px;
+            .google-login-button {
+                width: 20%;
+            }
+            .user-info{
+                max-width: 40px;
+            }
+            
         }
+
     }
 }
