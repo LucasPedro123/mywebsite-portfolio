@@ -48,7 +48,28 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .section-parallax{
+        h1{
+            font-size: 80px;
+            text-align: center;
+        }
 
+        .mountains{
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .stars{
+            background-size: 200vw;
+        }
+
+        .planets{
+            background-size: 150vw;
+            background-repeat: no-repeat;
+        }
+    }
+}
 
 @media screen and (max-width: 768px) {
     .section-parallax{
@@ -69,6 +90,15 @@
         .planets{
             background-size: 150vw;
             background-repeat: no-repeat;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section-parallax{
+        h1{
+            font-size: 30px;
+            text-align: center;
         }
     }
 }
