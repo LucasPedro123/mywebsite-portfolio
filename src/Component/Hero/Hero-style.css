@@ -28,8 +28,8 @@
     .main-buttoms {
         display: flex;
         gap: 20px;
-        
-          button {
+
+        button {
             position: relative;
             cursor: pointer;
             font-weight: 300;
@@ -42,9 +42,9 @@
             background-color: transparent;
             overflow: hidden;
             transition: border-color 0.3s ease;
-          }
-          
-          button::before {
+        }
+
+        button::before {
             content: '';
             position: absolute;
             top: 0;
@@ -53,20 +53,21 @@
             height: 100%;
             background-color: var(--lightgrray);
             transition: width 0.3s ease;
-            z-index: -1; /* Definindo um z-index menor para que o pseudo-elemento fique abaixo do texto */
-          }
-          
-          button:hover::before {
-            width: 100%;
-          }
-          
-          button:hover {
-            border-color: white;
-            color: rgb(60, 60, 60); 
-          }
-          
+            z-index: -1;
+            /* Definindo um z-index menor para que o pseudo-elemento fique abaixo do texto */
+        }
 
-        
+        button:hover::before {
+            width: 100%;
+        }
+
+        button:hover {
+            border-color: white;
+            color: rgb(60, 60, 60);
+        }
+
+
+
     }
 
     .main-title {
@@ -100,6 +101,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .main-slidingText {
     z-index: 0;
     display: flex;
@@ -111,44 +113,144 @@
     width: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+    .main-wrapper {
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .main-content {
+        width: 100%;
+        background-color: brown 3px solid;
+        align-items: center;
+        text-align: center;
+
+        .main-title {
+            font-size: 86px;
+            text-align: center;
+            z-index: 0;
+        }
+
+        .main-name {
+            font-size: 58px;
+            letter-spacing: 5px;
+        }
+
+        .main-buttoms {
+            button {
+                font-size: 1.6em;
+                padding: 30px;
+            }
+        }
+
+
+    }
+
+    .main-icons {
+        width: 60px;
+        height: 100px;
+        border-radius: 20px;
+        font-size: 1.8em;
+    }
+
+    .main-image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        right: 0;
+
+        img {
+            width: 200px;
+        }
+    }
+}
 
 @media screen and (max-width: 768px) {
-    .main-wrapper{
+    .main-wrapper {
         left: 0px;
+        justify-content: start;
     }
-    
-    .main-content{
+
+    .main-content {
         width: 100%;
         align-items: center;
         text-align: center;
+
+        .main-title {
+            font-size: 66px;
+            text-align: center;
+            z-index: 0;
+        }
+
+        .main-name {
+            font-size: 38px;
+            letter-spacing: 8px;
+        }
+
+
+
+    }
+  
+    .main-image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        right: 0;
+
+        img {
+            width: 150px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .main-wrapper {
+        left: 0px;
+        justify-content: start;
+    }
+
+    .main-content {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+
         .main-title {
             font-size: 36px;
             text-align: center;
             z-index: 0;
         }
-        
-        .main-name{
+
+        .main-name {
             font-size: 18px;
             letter-spacing: 5px;
         }
-        .main-buttoms{
-            button{
+
+        .main-buttoms {
+            button {
+                font-size: 0.8em;
                 padding: 10px;
             }
         }
 
 
     }
- 
-    .main-image{
+    .main-icons {
+        width: 40px;
+        height: 60px;
+        border-radius: 15px;
+        font-size: 1.2em;
+    }
+    .main-image {
         display: flex;
         justify-content: center;
         width: 100%;
         right: 0;
 
-        img{
+        img {
             width: 100px;
         }
     }
-}
+  }
