@@ -82,7 +82,99 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .footer {
+        flex-direction: column;
+
+        .footer-content {
+            width: 100%;
+            margin-top: -85vh;
+            
+            gap: 20px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                line-height: 56px;
+                font-size: 62px;
+                padding-top: calc(100vh - 100px);
+            }
+           
+        }
+        input, textarea{
+            z-index: -1;
+            font-size: 20px;
+        }
+
+        button{
+            z-index: 0;
+        }
+        .footer-form {
+            width: 100%;
+            max-width: 500px;
+            .form{
+                height: 850px;
+            }
+            button{
+                padding: 30px;
+                font-size: 36px;
+            }
+            .tel-icon {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+}
+
 @media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0px;
+
+        .footer-content {
+            width: 100%;
+            margin-top: -85vh;
+            
+            gap: 20px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                line-height: 46px;
+                font-size: 52px;
+                padding-top: calc(100vh - 100px);
+            }
+           
+        }
+
+        .footer-form {
+            width: 100%;
+            max-width: 450px;
+
+            .form{
+                height: 600px;
+            }
+            button{
+                padding: 20px;
+                font-size: 25px;
+            }
+            .tel-icon {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
     .footer {
         flex-direction: column;
         padding: 10px;
@@ -113,10 +205,64 @@
             max-width: 300px;
 
             .form{
-                max-height: 350px;
+                height: 500px;
             }
             button{
                 padding: 10px;
+                font-size: 18px;
+            }
+            .tel-icon {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer {
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+
+        .footer-content {
+            width: 100%;
+            margin-top: -85vh;
+            
+            gap: 5px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+           
+            h1 {
+                line-height: 26px;
+                font-size: 22px;
+                padding-top: calc(100vh - 100px);
+            }
+
+            h2{
+                font-size: 18px;
+            }
+
+            span{
+                font-size: 12px;
+            }
+           
+        }
+
+        .footer-form {
+            width: 100%;
+            max-width: 250px;
+
+            .form{
+                height: 400px;
+            }
+            button{
+                padding: 10px;
+                font-size: 18px;
             }
             .tel-icon {
                 width: 100%;
