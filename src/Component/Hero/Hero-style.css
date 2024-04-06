@@ -78,7 +78,6 @@
     }
 }
 
-
 .main-image {
     position: absolute;
     top: 30%;
@@ -167,13 +166,13 @@
     }
 
     .main-image {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        right: 0;
-        
+        width: 205px;
+        height: 205px;
+        top: 70%;
+        right: calc((100% - 205px) / 2); /* Calcula o valor de right para centralizar */
         img {
             width: 200px;
+            height: 200px;
         }
     }
 }
@@ -205,13 +204,13 @@
     }
   
     .main-image {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        right: 0;
-
+        width: 205px;
+        height: 205px;
+        top: 70%;
+        right: calc((100% - 205px) / 2); /* Calcula o valor de right para centralizar */
         img {
-            width: 150px;
+            width: 200px;
+            height: 200px;
         }
     }
 }
@@ -221,12 +220,13 @@
         left: 0px;
         justify-content: start;
     }
+ 
 
     .main-content {
         width: 100%;
         align-items: center;
         text-align: center;
-
+        gap: 30px;
         .main-title {
             font-size: 36px;
             text-align: center;
@@ -234,7 +234,7 @@
         }
 
         .main-name {
-            font-size: 18px;
+            font-size: 28px;
             letter-spacing: 5px;
         }
 
@@ -254,13 +254,13 @@
         font-size: 1.2em;
     }
     .main-image {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        right: 0;
-
+        width: 155px;
+        height: 155px;
+        top: 70%;
+        right: calc((100% - 155px) / 2); /* Calcula o valor de right para centralizar */
         img {
-            width: 100px;
+            width: 150px;
+            height: 150px;
         }
     }
-  }
+}
