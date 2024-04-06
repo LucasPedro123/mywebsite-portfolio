@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://i.postimg.cc/63zTnBzn/Captura-de-Tela-678.png" width="70%" alt="Site" />
+  <img src="https://i.postimg.cc/nrgm9HcT/Captura-de-Tela-679.png" width="70%" alt="Site" />
 </p>
 
 <!-- Botões de Acesso -->
