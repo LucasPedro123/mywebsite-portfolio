@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://camo.githubusercontent.com/d1640589281247a1d96641a57b544536596ae2bf5d60451a1b902720fe181e2f/68747470733a2f2f692e706f7374696d672e63632f59327930705846512f436170747572612d64652d54656c612d3635392e706e67" width="70%" alt="Site" />
+  <img src="https://i.postimg.cc/63zTnBzn/Captura-de-Tela-678.png" width="70%" alt="Site" />
 </p>
 
 <!-- Botões de Acesso -->
