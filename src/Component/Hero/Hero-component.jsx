@@ -1,5 +1,5 @@
 import Navbar from "../NavBar/Navbar"
-import myImg from '../../assets/Imgs/p2p.png'
+import myImg from '../../assets/Imgs/eu.jpg'
 import { motion } from "framer-motion";
 import './Hero-style.css'
 
