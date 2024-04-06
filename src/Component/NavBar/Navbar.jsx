@@ -1,13 +1,13 @@
 import './Navbar.css'
 import Sidebar from './Sidebar/Sidebar'
-
+import logo from '../../assets/Imgs/logo.svg'
 function Navbar() {
     
     return (
         <nav className='navbar'>
             <Sidebar/>
             <div className="wrapper">
-                <span>Lame Dev</span>
+                <span><img src={logo} width="100px" alt="" /></span>
                 <div className="social">
                     <a href="https://www.instagram.com/lucasfernandes4150/" target='_target'>
                         <i class="fa-brands fa-instagram"></i>

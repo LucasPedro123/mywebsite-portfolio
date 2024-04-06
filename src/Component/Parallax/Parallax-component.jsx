@@ -1,6 +1,8 @@
 import { useRef } from 'react';
 import img from "../../assets/Imgs/sun.png"
-import img2 from "../../assets/Imgs/lua-cheia.png"
+import img2 from "../../assets/Imgs/planets.png"
+import img3 from "../../assets/Imgs/m_3.png"
+import img4 from "../../assets/Imgs/mountains.png"
 
 import './Parallax-style.css';
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -24,11 +26,10 @@ function Parallax({ type }) {
             ref={ref}
         >
             <motion.h1 style={{ y: yTexts }}>{type}</motion.h1>
-            <div className='mountains'></div>
+            <div className='mountains' style={{backgroundImage: type === "Depoimentos" ? `url(${img3})` : `url(${img4})`}}></div>
             <motion.div
-                style={{ y: yBg, backgroundImage: `url(${type ? img : img2})` }}
+                style={{ y: yBg, backgroundImage: `url(${type === "Veja Meus Projetos" ? img : img2})` }}
                 className='planets'
-
             ></motion.div>
             <motion.div style={{ x: yBg }} className='stars'></motion.div>
         </div>    
