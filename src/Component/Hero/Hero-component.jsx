@@ -66,10 +66,12 @@ function Hero() {
         </div>
         <motion.div className="main-slidingText" variants={sliderVariants} initial="initial" animate="animate">
           Transformando Ideias em Realidade Digital
-          </motion.div>
-        <div className="main-image">
-          <img src={myImg} alt="" />
-        </div>
+        </motion.div>
+        <article className="test">
+          <div className="main-image">
+            <img src={myImg} alt="" />
+          </div>
+        </article>
       </main>
     </>
   )
