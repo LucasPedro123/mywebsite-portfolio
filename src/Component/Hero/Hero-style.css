@@ -22,7 +22,8 @@
         font-size: 30px;
         z-index: 2;
         letter-spacing: 10px;
-        color: rebeccapurple;
+        font-weight: 600;
+        color: #3F36A7;
     }
 
     .main-buttoms {
@@ -80,12 +81,21 @@
 
 .main-image {
     position: absolute;
-    bottom: 0;
-    right: 80px;
+    top: 30%;
+    right: 120px;
+    width: 215px;
+    height: 215px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
-
+    background: #3F36A7;
+    border-radius: 50%;
     img {
+        border: var(--primary) 5px solid;
+        border-radius: 50%;
         width: 200px;
+        height: 200px;
         overflow: hidden;
     }
 }
@@ -161,7 +171,7 @@
         justify-content: center;
         width: 100%;
         right: 0;
-
+        
         img {
             width: 200px;
         }
