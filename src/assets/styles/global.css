@@ -1,6 +1,20 @@
 :root{
     --primary: #0c0c1d;
-
+    --primary-200: #111132;
+    --secundary: #3F36A7;
     --white-main: #fff;
+    --blue-100: #5446E7;
+    --blue-200: #7467FB;
+    --blue-400: #7467FB;
+    --blue-500: #958BFF;
+    --blue-600: #B7B1FB;
+    --blue-700: #C2BDF6;
+    --lightblack: #151925;
     --lightgrray: lightgray;
+    --gray-100: #333333;
+    --gray-200: #808080;
+    --gray-300: #CCCCCC;
+    --white: #fff;
+    --orange-700: #ffa500;
+    --orange-click: rgb(200, 132, 7);
 }

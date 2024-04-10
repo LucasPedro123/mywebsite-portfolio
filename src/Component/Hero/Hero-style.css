@@ -4,7 +4,7 @@
     display: flex;
     z-index: 1;
     justify-content: space-between;
-    background: linear-gradient(180deg, #0c0c1d, #111132);
+    background: linear-gradient(180deg, var(--primary), var(--primary-200));
 }
 
 .main-wrapper {
@@ -16,14 +16,15 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 50%;
+    width: 100%;
+    max-width: 650px;
 
     .main-name {
         font-size: 30px;
         z-index: 2;
         letter-spacing: 10px;
         font-weight: 600;
-        color: #3F36A7;
+        color: var(--secundary);
     }
 
     .main-buttoms {
@@ -72,9 +73,8 @@
     }
 
     .main-title {
-        font-size: 88px;
+        font-size: 5.5vw; /* Tamanho da fonte baseado na largura da viewport */
         z-index: 2;
-
     }
 }
 
@@ -88,7 +88,7 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
-    background: #3F36A7;
+    background: var(--secundary);
     border-radius: 50%;
     img {
         border: var(--primary) 5px solid;
@@ -133,7 +133,6 @@
 
     .main-content {
         width: 100%;
-        background-color: brown 3px solid;
         align-items: center;
         text-align: center;
 
