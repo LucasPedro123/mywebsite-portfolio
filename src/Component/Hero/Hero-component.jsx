@@ -49,7 +49,7 @@ function Hero() {
         <div className="main-wrapper">
           <motion.div className="main-content" variants={textVariants} initial="initial" animate="animate">
             <motion.h2 className="main-name" variants={textVariants}>Lucas Pedro</motion.h2>
-            <motion.h1 className="main-title" variants={textVariants}>Web developer and UI Designer</motion.h1>
+            <motion.h1 className="main-title" variants={textVariants}>Web developer <br/>and UI Designer</motion.h1>
             <motion.div className="main-buttoms" variants={textVariants}>
               <a href="#servicos">
                 <motion.button variants={textVariants}>Veja Meus Trabalhos</motion.button>
