@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     max-height: 100vh;
-    background: #0C0C1D
+    background: var(--primary)
 }
 .textContainer {
     flex: 1;
@@ -18,11 +18,11 @@
     text-align: end;
     font-size: 20px;
     font-weight: 300;
-    color: grey;
+    color: var(--gray-200);
     hr {
         width: 500px;
         border: none;
-        border-top: 0.5px solid gray;
+        border-top: 0.5px solid var(--gray-200);
     }
 }
 
@@ -34,7 +34,7 @@
     i {
         height: 50px;
         width: 50px;
-        background: #151925;
+        background: var(--primary-200);
         text-align: center;
         line-height: 50px;
         border-radius: 50%;
@@ -86,7 +86,7 @@
             height: 100%;
             width: 100%;
             list-style: none;
-            background: #151925;
+            background: var(--primary-200);
             border-radius: 8px;
 
             display: flex;
@@ -98,7 +98,7 @@
   
 
         .img {
-            background: #3F36A7;
+            background: var(--secundary);
             width: 148px;
             height: 148px;
             border-radius: 50%;
@@ -109,7 +109,7 @@
                 height: 140px;
                 object-fit: cover;
                 border-radius: 50%;
-                border: 4px solid #151925;
+                border: 4px solid var(--primary-200);
             }
         }
 
@@ -122,14 +122,14 @@
         .card-texts {
             height: 100%;
             h2 {
-                color: #FFFFFF;
+                color: var(--white-main);
                 font-weight: 900;
                 font-size: 1.56rem;
                 margin: 30px 0px 5px;
             }
 
             span {
-                color: #CCCCCC;
+                color:var(--gray-300);
                 font-size: 1.31rem;
             }
         }
@@ -150,14 +150,14 @@
     }
     .login-message {
         padding: 10px;
-        background-color: #333333; /* Cor vermelha vibrante */
+        background-color: var(--gray-100); /* Cor vermelha vibrante */
         border-radius: 5px;
         color: white;
         display: flex;
         align-items: center;
         gap: 10px;
         i{
-            color: orange;
+            color: var(--orange-700);
             font-size: 1em;
         }
     }
@@ -180,7 +180,7 @@
     .input-box {
         position: relative;
         width: 100%;
-        border-bottom: 1px solid #CCCCCC;
+        border-bottom: 1px solid var(--gray-300);
         border-radius: 0.3px;
     }
 
@@ -190,7 +190,7 @@
         background-color: transparent;
         border: none;
         outline: none;
-        color: #ccc;
+        color: var(--gray-300);
         font-size: 1em;
         font-weight: 600;
     }
@@ -198,8 +198,8 @@
     .submit-button {
         height: 36px;
         font-size: 14px;
-        background-color: orange;
-        color: black;
+        background-color: var(--orange-700);
+        color: var(--lightblack);
         border: none;
         border-radius: 18px;
         padding: 0px 16px;
@@ -208,7 +208,7 @@
     }
 
     .submit-button:hover {
-        background-color: rgb(188, 122, 0);
+        background-color: var(--orange-click);
     }
 
     .comment-submit{
